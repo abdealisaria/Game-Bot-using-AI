@@ -64,7 +64,7 @@ class Bird {
 
   update() {
     this.score++;
-    console.log(this.score);
+//     console.log(this.score);
     this.velocity += this.gravity;
     //this.velocity *= 0.9;
     // bird falling down
