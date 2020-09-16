@@ -1,17 +1,15 @@
 let gen = 2;
-let sval = 2;
+// let sval = 2; slider value
 function nextGeneration() {
-  console.log('generation : ' + gen);
+  console.log("generation : " + gen);
   gen++;
   slider.value(sval);
   if (sval > 10) {
     console.log("difficulty level : 10");
-  }
-  else {
+  } else {
     console.log("difficulty level : " + sval);
   }
   sval++;
-
 
   calculateFitness();
   for (let i = 0; i < TOTAL; i++) {
